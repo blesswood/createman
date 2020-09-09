@@ -1,7 +1,12 @@
 import os
 import sys
 
-askme = input("1)Build manpage\n2)Create manpage\n")
+if 'help' in sys.argv:
+    print('->Create manpage:\n-->python3 ctman.py\n--->After choosing manpage name, edit it in current dicrectory, then build.')
+    print('\n->Build:\n-->sudo python3 ctman.py\n--->Build using choosed manpage name.')
+    sys.exit()
+
+askme = input('1)Build manpage\n2)Create manpage\n')
 
 def build_from_file():
     if(os.getuid()) == 0: #check privileges
