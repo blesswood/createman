@@ -1,4 +1,5 @@
 # createman
 Create your own manpage!
 
-Updates soon...
+Usage: python3 ctman.py help
+Building manpage requires root
